@@ -4,6 +4,9 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <link rel="stylesheet" type="text/css" href="styleindex.css"/>
+<script src="js/jquery-1.12.1.min.js" type="text/javascript"></script>
+<script src="js/jsmain.js" type="text/javascript"></script>
+
 <title>perempuan</title>
 </head>
 
@@ -29,11 +32,29 @@
 	<div>
 		<footer>
 		Copyright &copy; Perempuan.com
-		Follow us: 	<img src="images/index/facebook.png" width="30" height="30" hspace="5"/>
+		<p>Follow us:</p> 	<img src="images/index/facebook.png" width="30" height="30" hspace="5"/>
 					<img src="images/index/instagram.jpg" width="30" height="30" hspace="5"/>
 					<img src="images/index/Twitter_logo-Update-Hints.gif" width="30" height="30" hspace="5"/>
 		</footer>
 	</div>
 </body>
 
+<script>
+$(function() {
+  var menuVisible = false;
+  $("#submenu").click(function() {
+    if (menuVisible) {
+      $("#submenu").css({"display":"none"});
+      menuVisible = false;
+      return;
+    }
+    $("#submenu").css({"display":"block"});
+    menuVisible = true;
+  });
+  $("#submenu").click(function() {
+    $(this).css({"display":"none"});
+    menuVisible = false;
+  });
+});
+</script>
 </html>
