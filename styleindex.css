@@ -38,7 +38,13 @@ li a {
 li a:hover {
 		background-color:#FF9999;
 }
-footer	{
-	background-color:gray;
+footer {
+		background-color:gray;
+		text-align:left;
+		clear:both;
+		color:white;
+		padding:2%;
 }
-
+#logo	{
+	float:right;
+}
