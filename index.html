@@ -19,14 +19,37 @@
 			<li><a href="index.html">Home</a></li>
 			<li><a href="beauty.html">Beauty</a></li>
 			<li><a href="health.html">Health</a></li>
-			<li><a href="index.html">Living</a></li>
-				<ul id="submenu">
-				<li><a href="travel.html">Travel</a></li>
-				<li><a href="food.html">Food</a></li>
+			
+			<li id="living"><a href="index.html">Living</a></li>
+
+				<ul class="submenu">
+				<li id="hidden"><a href="travel.html">Travel</a></li>
+				<li id="hidden2"><a href="food.html">Food</a></li>
 				</ul>
 		</ul>
 		</div>
 		
+		
+				<div align="center" class="subscribebox">
+				<h4>Join Us</h4>
+	<form>
+		<table>
+			<tr>
+				<td class="auto-style2">Name	:</td>
+				<td><input type="text" class="auto-style2"/></td>
+			</tr>	
+			<tr>	
+				<td class="auto-style2">Email	:</td>
+				<td><input type="text" class="auto-style2"/></td>
+			</tr>
+		
+			<tr>
+				<td align="center"><button class="auto-style2">Submit</button></td>
+			</tr>
+		</table>
+	</form>
+	
+		</div>
 		
 		
 	<div>
@@ -39,4 +62,18 @@
 		</footer>
 	</div>
 </body>
+
+<script>
+$(".hidden").hide();
+			$("#living").click(function(){
+$(".hidden").slideToggle("fast");
+			});
+</script>
+<script>
+$(".hidden2").hide();
+			$("#living").click(function(){
+$(".hidden2").slideToggle("fast");
+			});
+</script>
+
 </html>
