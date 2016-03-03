@@ -2,39 +2,55 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<div>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link rel="stylesheet" type="text/css" href="styleindex.css"/>
+<script src="js/jquery-1.12.1.min.js" type="text/javascript"></script>
+<script src="js/jsmain.js" type="text/javascript"></script>
+
 <title>perempuan</title>
-</div>
 </head>
+
 <body>
-<div>
-	<h1>PEREMPUAN.COM</h1>
-</div>
+	<div id="header">
+	<h1>Perempuan.com</h1>
+	</div>
 		<div>
-		<ul>
-			<li>Home</li>
-			<li>Beauty</li>
-			<li>Health</li>
-			<li>Living</li>
-				<ul>
-				<li>Travel</li>
-				<li>Food</li>
+		<ul id="menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="beauty.html">Beauty</a></li>
+			<li><a href="health.html">Health</a></li>
+			
+			<li id="living"><a href="index.html">Living</a></li>
+
+				<ul class="submenu">
+				<li id="hidden"><a href="travel.html">Travel</a></li>
+				<li id="hidden2"><a href="food.html">Food</a></li>
 				</ul>
 		</ul>
 		</div>
-		<div>
-		<ul class="breadcrumb">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Beauty</a></li>
-		</ul>
+		
+	<div>
+		<footer>
+		Copyright &copy; Perempuan.com
+		<div id="logo">Follow us:	<img src="images/index/facebook.png" width="30" height="30" hspace="5"/>
+					<img src="images/index/instagram.jpg" width="30" height="30" hspace="5"/>
+					<img src="images/index/Twitter_logo-Update-Hints.gif" width="30" height="30" hspace="5"/>
 		</div>
-		<div>
-			<h2>Beauty</h2>
-		</div>
-			<div>
-			
-			</div>
+		</footer>
+	</div>
 </body>
+
+<script>
+$(".hidden").hide();
+			$("#living").click(function(){
+$(".hidden").slideToggle("fast");
+			});
+</script>
+<script>
+$(".hidden2").hide();
+			$("#living").click(function(){
+$(".hidden2").slideToggle("fast");
+			});
+</script>
 
 </html>
