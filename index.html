@@ -4,36 +4,109 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <link rel="stylesheet" type="text/css" href="styleindex.css"/>
+<script src="js/jquery-1.12.1.min.js" type="text/javascript"></script>
+<script src="js/jsmain.js" type="text/javascript"></script>
+
 <title>perempuan</title>
+
+<style>
+.dropbtn {
+    background-color:gray;
+    color:black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	margin-left:20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position:relative;
+    background-color: gray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:inherit;
+}
+
+.dropdown-content a:hover {background-color:gray;}
+
+.dropdown:hover .dropdown-content {
+    display:inherit;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: gray;
+}
+</style>
 </head>
 
 <body>
 	<div id="header">
-	<h1>Perempuan.com</h1>
+	<h1>Perempuan</h1>
 	</div>
 		<div>
 		<ul id="menu">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="beauty.html">Beauty</a></li>
 			<li><a href="health.html">Health</a></li>
-			<li><a href="index.html">Living</a></li>
-				<ul id="submenu">
-				<li><a href="travel.html">Travel</a></li>
-				<li><a href="food.html">Food</a></li>
-				</ul>
+			
+			<li><div class="dropdown">
+			<button class="dropbtn" style="font-family:Castellar; color:#FFFFFF;">Living</button>
+			<div class="dropdown-content">
+				<a href="travel.html">Travel</a>
+				<a href="food.html">Food</a>
+				</div>
+			</li>
 		</ul>
 		</div>
 		
+			<marquee><div><h2 style="font-family:Castellar;color:gray;">Let's Start Our Journey</h2></div></marquee>
+			
 		
 		
+				<div align="center" class="subscribebox">
+				<h4>Join Us</h4>
+	<form>
+		<table>
+			<tr>
+				<td class="auto-style2">Name	:</td>
+				<td><input type="text" class="auto-style2"/></td>
+			</tr>	
+			<tr>	
+				<td class="auto-style2">Email	:</td>
+				<td><input type="text" class="auto-style2"/></td>
+			</tr>
+		
+			<tr>
+				<td align="center"><button class="auto-style2">Submit</button></td>
+			</tr>
+		</table>
+	</form>
+		</div>
 	<div>
 		<footer>
 		Copyright &copy; Perempuan.com
-		Follow us: 	<img src="images/index/facebook.png" width="30" height="30" hspace="5"/>
+		<div id="logo">Follow us:	<img src="images/index/facebook.png" width="30" height="30" hspace="5"/>
 					<img src="images/index/instagram.jpg" width="30" height="30" hspace="5"/>
 					<img src="images/index/Twitter_logo-Update-Hints.gif" width="30" height="30" hspace="5"/>
+		</div>
 		</footer>
 	</div>
+	
 </body>
+
+
 
 </html>
