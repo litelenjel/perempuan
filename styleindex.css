@@ -13,10 +13,7 @@
 #menu {
 	list-style:none;
 	background-color:gray;
-		padding:1%
-		1%
-		1%
-		1%;
+		padding:1%;
 		margin:0%
 		0%
 		0%
@@ -24,7 +21,7 @@
 		overflow:hidden;
 		display: block;
 		text-align:center;
-		font-family:antero;
+		font-family:Castellar;
 }
 li	{
 	float:left;
