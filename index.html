@@ -8,6 +8,47 @@
 <script src="js/jsmain.js" type="text/javascript"></script>
 
 <title>perempuan</title>
+
+<style>
+.dropbtn {
+    background-color:gray;
+    color:black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position:relative;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:inherit;
+}
+
+.dropdown-content a:hover {background-color:gray;}
+
+.dropdown:hover .dropdown-content {
+    display:inherit;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
 </head>
 
 <body>
@@ -19,14 +60,14 @@
 			<li><a href="index.html">Home</a></li>
 			<li><a href="beauty.html">Beauty</a></li>
 			<li><a href="health.html">Health</a></li>
-				
-				<div class="dropdown">
-					<button class="dropbtn">Living</button>
-				<div class="dropdown-content">
+			
+			<div class="dropdown">
+			<button class="dropbtn">Living</button>
+			<div class="dropdown-content">
 				<a href="travel.html">Travel</a>
 				<a href="food.html">Food</a>
 				</div>
-				</div>
+			</div>
 		</ul>
 		</div>
 		
@@ -63,29 +104,6 @@
 		</footer>
 	</div>
 </body>
-
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    for (var d = 0; d < dropdowns.length; d++) {
-      var openDropdown = dropdowns[d];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-
 
 
 </html>
