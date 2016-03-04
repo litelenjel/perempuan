@@ -8,6 +8,48 @@
 <script src="js/jsmain.js" type="text/javascript"></script>
 
 <title>perempuan</title>
+<style>
+.dropbtn {
+    background-color:gray;
+    color:black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	margin-left:20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position:relative;
+    background-color: gray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:inherit;
+}
+
+.dropdown-content a:hover {background-color:gray;}
+
+.dropdown:hover .dropdown-content {
+    display:inherit;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: gray;
+}
+</style>
+
 </head>
 
 <body>
@@ -20,22 +62,44 @@
 			<li><a href="beauty.html">Beauty</a></li>
 			<li><a href="health.html">Health</a></li>
 			
-			<li id="living"><a href="index.html">Living</a></li>
-
-				<ul class="submenu">
-				<li id="hidden"><a href="travel.html">Travel</a></li>
-				<li id="hidden2"><a href="food.html">Food</a></li>
-				</ul>
+			<li><div class="dropdown">
+			<button class="dropbtn">Living</button>
+			<div class="dropdown-content">
+				<a href="travel.html">Travel</a>
+				<a href="food.html">Food</a>
+				</div>
+			</div>
+			</li>
 		</ul>
 		</div>
 		
-		<div>
+		<!--subscribe-->
+				<div align="center" class="subscribebox">
+				<h4>Join Us</h4>
+	<form>
+		<table>
+			<tr>
+				<td class="auto-style2">Name	:</td>
+				<td><input type="text" class="auto-style2"/></td>
+			</tr>	
+			<tr>	
+				<td class="auto-style2">Email	:</td>
+				<td><input type="text" class="auto-style2"/></td>
+			</tr>
+			<tr>
+				<td align="center"><button class="auto-style2">Submit</button></td>
+			</tr>
+		</table>
+	</form>
+		</div>
+		
+		<div align="center" style="width: 1500px">
 			<h1>Beauty</h1>
 		</div>
 		
 <div>
-	<div>
-	<img src="images/beauty/Masker-wajah-alami.jpg" height="250" width="350" />
+	<div style="width: 1500px">
+	<img src="images/beauty/Masker-wajah-alami.jpg" width="300" height="300" class="imgartikel" />
 	<h3>Masker Wajah Alami Untuk Perawatan Kulit Wajah</h3>
 	<p>Cara membuat masker wajah alami untuk memutihkan wajah serta untuk kulit kering dan kusam, berminyak, dan untuk kulit berjerawat tidaklah sulit. Hanya dibutuhkan beberapa langkah saja untuk dapat membuat masker dari bahan alami seperti buah-buahan dan sayuran. Masalah kesehatan kulit memang sangat sering dialami oleh orang-orang yang beraktifitas di luar ruangan. Kulit kusam, kering, berjerawat, dan kulit belang merupakan beberapa masalah kulit tersebut. Dibutuhkan perawatan wajah secara ekstra agar kulit wajah anda tetap terjaga kesehatan dan kecantikannya.</p>
 	<p>Berbagai macam masker wajah alami dapat anda gunakan untuk mengatasi masalah-masalah kulit tersebut. Tentunya anda tidak perlu kawatir dengan efek samping yang akan ditimbulkan akibat pemakaian masker alami tersebut. Mengingat masker tersebut tidak menggunakan bahan kimia jadi sangat aman bagi kesehatan kulit wajah. Bahkan berbagai vitamin dan nutrisi yang terkandung dalam buah dan sayuran mampu membuat kulit anda semakin sehat.</p>
@@ -47,8 +111,8 @@
 	</div>
 	<br/>
 	<br/>
-	<div>
-	<img src="images/beauty/iStock_000014564886_beauty future.jpg" height="250" width="350" />
+	<div style="width: 1500px">
+	<img src="images/beauty/iStock_000014564886_beauty future.jpg" width="300" height="300" class="imgartikel" />
 	<h3>Cara Memilih Kuas Kosmetik Yang Baik</h3>
 	<p>KUAS make up memiliki peran penting dalam menentukan hasil akhir dari riasan wajah. Selain segi kualitas, jenis kuas make up juga berpengaruh terhadap sentuhan dalam tampilan secara keseluruhan.Berikut ini adalah hal-hal yang perlu Anda perhatikan dalam memilih kuas make up, seperti dikutip situs totalbeauty.com:</p>
 	<p><strong>Material</strong><br/>Saat memilih kuas make up, sangat penting bagi Anda untuk memperhatikan material pembuatnya. Formula make up yang Anda gunakan dapat membantu menentukan apakah Anda harus memilih kuas dari bulu alami (musang atau surai kuda), atau bulu sintetis (biasanya terbuat dari akrilik atau plastik),Kuas alami lebih baik untuk produk kosmetik kering seperti blush on dan eye shadow. Sedangkan kuas sintetis paling cocok untuk krim atau produk cairan, seperti concealer atau alas bedak. Sebab, kuas sintetis menyerap lebih sedikit produk dibandingkan kuas alami.</p>
@@ -56,13 +120,13 @@
 	</div>
 	<br/>
 	<br/>
-	<div>
-	<img src="images/beauty/maxresdefault.jpg" height="250" width="350" />
+	<div style="width: 1500px">
+	<img src="images/beauty/maxresdefault.jpg" width="300" height="300" class="imgartikel" />
 	<h3>Review Produk : Purbasari Color Matte</h3>
 	<p>Semenjak lipstick matte booming, banyak tiba-tiba terdengar kabar mengenai lipstick matte dalam negeri yang di rave punya harga murah dengan kualitas yang juara. Kaya contohnya Lipstick Matte Purbasari ini. Menurut salah satu manager di kantor gue yang dulu sempet kerja di Purbasari, produk lipstick matte dari brand ini udah lumayan lama loh ada di peredaran, tapi gak laku-laku. Pas gue kasih tau kalo banyak orang yang nyari dan bilang barang ini bagus, beliau malah bingung sendiri. Hahaha. </p>
 	<p>Ya gue sih ngerti ya kenapa produk dalam negeri itu susah lakunya kalo di luar negeri produk yang serupa belom ngehits. Gue waktu dulu awam soal makeup juga pasti takutlah sama lipstick yang teksturnya kering, tahan lama banget di bibir, harganya murah pulak! Pake bahannya dari mana kalik?! Tapi coba sekarang, pendapat gue udah lain. Kalo ditanya soal produk ini pasti yang gue bilang malah, "Nih cobain! Teksturnya matte banget, tahan lama, murah lagi!". Semua hal yang dulu gue takutin malah jadi poin plus sekarang. </p>
 	<p>Diliat dari batangnya aja udah keliatan yah betapa mattenya lipstick ini. Waktu dipake tuh rasanya mirip kaya ngolesin penghapus ke bibir. Kenapa gue tau rasanya kaya pengapus? Soalnya dulu waktu kecil pernah dikasih penghapus yang bentuknya percis kaya lipstick asli. Pertama kali diolesin ke bibir agak seret tapi begitu udah ada olesan ke 3/4 kali gitu udah licin kok gampang diolesnya. Warnanya juga opaque banget, tapi gak berat di bibir. Finishnya itu bener-bener dead matte, mirip kaya NYX Soft Matte Lip Cream. Dipake buat minum gak nempel sama sekali ke gelasnya, tapi buat makan kalo barbar ya dia ikut ketelen. Paling yang ilang di tengah dan luarnya masih ada. Jurus gue abis makan mulutnya dimingkem-mingkemin lagi biar warnanya agak rataan. Kalo mau dipake buat ombre lips gitu juga cantik loh! Pake di tengah bibir dikit-dikit gitu terus dimingkem-mingkemin deh bibirnya sampe warnanya nyebar-nyebar.</p>
-	<img src="images/beauty/Purbasari Matte Lipstick 9.png" height="150" width="150" /><br/>
+	<img src="images/beauty/Purbasari Matte Lipstick 9.png" width="150" height="150" class="imgartikel" /><br/>
 	<p><strong>82</strong> - Warna ungu gelap yang masih wearable. Bisa jadi alternatif vampy lips sehari-hari karena ungunya gak terlalu gelap juga jadinya di bibir.<br/>
 
 <strong>85</strong> - Pink lumayan shocking yang masih termasuk dalam warna kedemenan gue. Warnanya lebih ke neutral undertone jadi nyatu ke warna kulit gue dengan baik.<br/>

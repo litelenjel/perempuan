@@ -3,11 +3,11 @@
 }
 #header {
 	background-color:#8EA89D;
-	border:thin;
-	font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-	padding:1%;
-	font-size:xx-large;
-	font-style:oblique;
+	border:inherit;
+	font-family:"Cute Baby Regular";
+	padding:0;
+	font-size:70px;
+	border-spacing:0 0 ;
 	
 }
 #menu {
@@ -24,13 +24,14 @@
 		overflow:hidden;
 		display: block;
 		text-align:center;
+		font-family:antero;
 }
 li	{
 	float:left;
 }
 li a {
 		display: block;
-		color:#333333;
+		color:#FFFFFF;
 		text-align:center;
 		padding: 14px 16px;
 		font-size:medium;
